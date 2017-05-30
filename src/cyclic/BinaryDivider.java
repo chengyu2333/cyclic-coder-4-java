@@ -11,7 +11,7 @@ public class BinaryDivider {
 
 		DivResult result = new DivResult();
 
-		// calculation of a quotient part
+		// 计算商
 		int x = 0;
 		while (ha > hb) {
 			ha >>= 1;
@@ -19,7 +19,7 @@ public class BinaryDivider {
 		}
 		result.setQuotient(1 << x);
 
-		// calculation of a remainder part
+		// 计算余数
 		int db = b << x;
 		result.setRemainder(a ^ db);
 
